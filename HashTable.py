@@ -10,11 +10,17 @@ class HashTable:
   # 1️⃣ TODO: Complete the create_arr method.
 
   # Each element of the hash table (arr) is a linked list.
-  # This method creates an array (list) of a given size and populates each of its elements with a LinkedList object.
 
   def create_arr(self, size):
-     
-    pass
+    """ Creates an array (list) of a given size 
+    and populates each of its elements with a LinkedList object """
+    array = []
+    
+    for i in range(size): 
+      new_ll = LinkedList()
+      array.append(new_ll)
+    
+    return array
 
 
 
