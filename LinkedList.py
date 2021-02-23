@@ -11,7 +11,7 @@ class LinkedList:
     new_node.next = self.head
     self.head = new_node
 
-  # Changed the find function to find and update
+  # Changed the find function so it finds and updates
   # Used this in the insert method
   def find_update(self,item):
     current = self.head
