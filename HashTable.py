@@ -34,9 +34,8 @@ class HashTable:
     # 2. Calculate its distance from 'a'
     # 3. Mod so we are in range
 
-    first_char = key[0].lower()
-    dist_a = ord(first_char) - ord('a')
-    index = dist_a % self.size
+    hash_key = hash(key)
+    index = (hash_key * 21) % self.size
 
     return index
 
@@ -75,7 +74,6 @@ class HashTable:
 
     for ll in self.arr: 
       ll.print_nodes()
-      print("This Linked List is Done. \n")
     
     print('DONE TRAVERSING')
 
